@@ -1,18 +1,24 @@
 html {
   box-sizing: border-box;
   line-height: 1.5;
-  font-family: "Merriweather", regular;
-
+  font-family: "Merriweather";
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
+img{
+  width: 100%;
+}
+
 h1 {
   margin: 0;
   font-size: 1.8rem;
-  padding: 1rem;
+  grid-column: 1 / 2;
+  grid-row: 1;
+  align-self: end;
+  z-index: 1;
 }
 
 .first {
@@ -24,10 +30,14 @@ h2 {
   font-size: 1.5rem;
 }
 
-
 body {
+  margin:0
+}
+
+dl {
   display: grid;
-  grid-template-coluns: 1fr 1fr 1fr;
+  padding: 0;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: .25rem;
 }
 
