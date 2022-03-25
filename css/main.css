@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: "Merriweather", italic;
+
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+.first {
+  font-size: 1.5rem;
+  color: white;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
