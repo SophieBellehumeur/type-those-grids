@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   line-height: 1.5;
-  font-family: "Merriweather", italic;
+  font-family: "Merriweather", regular;
 
 }
 
@@ -10,7 +10,9 @@ html {
 }
 
 h1 {
+  margin: 0;
   font-size: 1.8rem;
+  padding: 1rem;
 }
 
 .first {
@@ -20,4 +22,22 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
+}
+
+
+body {
+  display: grid;
+  grid-template-coluns: 1fr 1fr 1fr;
+  gap: .25rem;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.pano {
+  grid-column: 1 / -1;
+  grid-row: 1;
 }
