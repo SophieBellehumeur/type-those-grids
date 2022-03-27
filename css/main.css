@@ -8,46 +8,91 @@ html {
   box-sizing: inherit;
 }
 
-img{
+img {
   width: 100%;
 }
 
+body {
+  margin: 0;
+}
+
 h1 {
+  padding: 1.5rem;
   margin: 0;
   font-size: 1.8rem;
-  grid-column: 1 / 2;
+  font-style: italic;
+  grid-column: 1 / -1;
   grid-row: 1;
-  align-self: end;
-  z-index: 1;
 }
 
 .first {
   font-size: 1.5rem;
   color: white;
+  font-style: italic;
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  align-self: end;
+  z-index: 1;
+  padding: 1.5rem;
+  margin: 1.5rem;
+
+}
+
+.banner img{
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
 }
 
 h2 {
   font-size: 1.5rem;
+  font-style: italic;
 }
 
-body {
-  margin:0
+p {
+  color: white;
+  font-style: regular;
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  align-self: end;
+  z-index: 1;
+  margin-bottom: 1.5rem;
 }
 
-dl {
+main {
   display: grid;
   padding: 0;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: .25rem;
+  grid-template-rows: 1fr;
+  gap: .75rem;
+  grid-template-areas:
+  "box1 box2 box3";
+  grid-area: box 2;
+  margin-top: 1rem;
 }
 
-header {
+.banner {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
+  margin: 0;
 }
 
-.pano {
-  grid-column: 1 / -1;
-  grid-row: 1;
+figcaption {
+  margin: 0;
+}
+
+dd {
+  font-style: regular;
+}
+
+dt {
+  font-style: italic;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
 }
