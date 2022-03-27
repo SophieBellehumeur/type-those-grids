@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   line-height: 1.5;
-  font-family: "Merriweather";
+  font-family: Merriweather, serif;
 }
 
 *, *::before, *::after {
@@ -36,10 +36,9 @@ h1 {
   z-index: 1;
   padding: 1.5rem;
   margin: 1.5rem;
-
 }
 
-.banner img{
+.banner img {
   display: grid;
   grid-column: 1 / -1;
   grid-row: 1 / -1;
@@ -52,13 +51,14 @@ h2 {
 
 p {
   color: white;
-  font-style: regular;
+  font-style: normal;
   display: grid;
   grid-column: 1 / -1;
   grid-row: 1;
   align-self: end;
   z-index: 1;
   margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
 }
 
 main {
@@ -67,25 +67,26 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: .75rem;
-  grid-template-areas:
-  "box1 box2 box3";
+  grid-template-areas: "box1 box2 box3";
   grid-area: box 2;
-  margin-top: 1rem;
+  margin: 0;
 }
 
 .banner {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  margin: 0;
+  margin-bottom: .75rem;
 }
 
 figcaption {
-  margin: 0;
+  margin-bottom: -.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 dd {
-  font-style: regular;
+  font-style: normal;
 }
 
 dt {
@@ -95,4 +96,15 @@ dt {
 figure {
   margin: 0;
   padding: 0;
+}
+
+figcaption > h2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+
+dl {
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
 }
